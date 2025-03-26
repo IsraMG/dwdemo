@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    box-sizing: border-box; /*Hace que los elementos no se vean afectados por el border y el padding*/
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar{
+    background-color: #333;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+}
+
+.navbar .logo {
+    width: 150px;
+    height: 40px;
+    /*order: 2; */
+}
+
+.navbar ul{
+    /*order: 1*/
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* .navbar ul li{
+    /*display: inline-block; /*display:flex hace lo mismo
+} */
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none; /*para quitar las rayas de debajo*/
+}
+
+.navbar ul li a:hover{
+    color: gold;
+}
+
+.navbar .menu-icon{
+    display: none;
+    color: white;
+    font-size: 26px;
+}       
+
+/* main{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+main .prueba{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+} */
+
+header h1{
+    text-align: center;
+    background-color: #4caf50;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+}
+
+.galeria{
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contenedor-img{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contenedor-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h2{
+    margin-bottom: 20px;
+}
+
+.forma-contacto{
+    width: 80%;
+    max-width: 650px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+label{
+    color: black;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-grupo, .forma-grupo{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #218838;
+}
+
+@media(min-width: 768px){
+    .fila{
+        display: flex;
+        gap: 10px;
+    }
+    .input-grupo{
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px){ /*este es para cuando el tamaño de pantalla llege a ese tamaño, en este caso es el tamaño de una tablet media querys*/
+    /* body{
+        background-color: wheat;
+    } */
+
+    /*.contenedor-img{
+        width: 150px;
+        height: 150px;
+    }*/
+
+    .navbar .menu-icon{
+        display: block;
+    }
+    
+    .navbar ul{
+        display: none;
+    }
+}

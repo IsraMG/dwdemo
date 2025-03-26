@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imagenes</title>
+    <link rel="stylesheet" href="CSS/galeria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo"  src="img/logo.jpg" alt="Logo de la FES" title="FES Acatlán">
+        <div class="menu-icon" id="menu-icon" >
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Galería</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <h1>Galería de Imágenes</h1>
+    </header>
+    <main class="galeria">
+        <div class="contenedor-img">
+            <img title="Naturaleza 1" src="img/naturaleza1.jpeg" alt="Naturaleza 1">
+            <img title="Naturaleza 2" src="img/naturaleza2.jpeg" alt="Naturaleza 2">
+            <img title="Naturaleza 3" src="img/naturaleza3.webp" alt="Naturaleza 3">
+            <img title="Naturaleza 4" src="img/naturaleza4.jpg" alt="Naturaleza 4">
+            <img title="Naturaleza 5" src="img/naturaleza5.jpeg" alt="Naturaleza 5">
+            <img title="Naturaleza 6" src="img/naturaleza6.webp" alt="Naturaleza 6">
+        </div>
+    </main>
+    <footer>
+        <h2>Contacto</h2>
+        <form action="#" class="forma-contacto">
+            <div class="fila">
+                <div class="input-grupo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" required>
+                </div>
+                <div class="input-grupo">
+                    <label for="correo">E-mail:</label>
+                    <input type="email" name="correo" id="correo" required>
+                </div>
+            </div>
+            <div class="forma-grupo">
+                <label for="pais">Seleccione País:</label>
+                <select name="pais" id="pais">
+                    <option value="mexico">México</option>
+                    <option value="usa">Estados Unidos</option>
+                    <option value="mexico">Canada</option>
+                </select>
+            </div>
+            <div class="forma-grupo">
+                <label for="comentarios">Ingrese Comentario:</label>
+                <textarea name="comentario" id="comentario" row="10" cols="30"></textarea>
+            </div>   
+            <input type="submit" value="Enviar">
+        </form>
+        <p>&copy; 2025 - Galería FES Acatlán</p>
+    </footer>
+</body>
+</html>
