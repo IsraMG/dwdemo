@@ -181,4 +181,37 @@ input[type=submit]:hover{
     .navbar ul{
         display: none;
     }
+
+    .nav-list.active{
+        display: flex;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        /*right: ;
+        bottom: ;*/
+    }
+
+    .nav-list li{
+        padding: 20px 0;
+        color: black;
+    }
+    .nav-list li:hover{
+        background-color: #4caf50;
+        color: black;
+    }
+
+    .nav-list li:hover a{
+        color: black;
+    }
+    .nav-list li:hover a:hover{
+        color: black;
+    }
+
 }
