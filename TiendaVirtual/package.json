@@ -1,7 +1,7 @@
 {
   "name": "tiendavirtual",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mi tienda virtual en Node.js",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,5 +10,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
 }
