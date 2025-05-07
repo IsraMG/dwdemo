@@ -1,5 +1,18 @@
 {
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "name": "1erservidornodeexpress",
+  "version": "1.0.0",
+  "description": "Mi primer servidor con Node.js y Express",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }
