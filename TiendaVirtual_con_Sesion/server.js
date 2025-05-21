@@ -130,7 +130,7 @@ app.post('/api/registrar', async (req, res) => {
             success: true,
             usuario: {
                 id: nuevoUsuario.id,
-                nombre: nuevoUsuario.name,
+                nombre: nuevoUsuario.nombre,
                 email: nuevoUsuario.email
             }
         });
